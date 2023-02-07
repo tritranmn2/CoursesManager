@@ -88,12 +88,11 @@ html {
 
 * {
    box-sizing: inherit;
+   user-select: none;
 }
 
 
-/* #app {
 
-} */
 
 #wrapper {
    padding-bottom: 8px;
@@ -102,10 +101,6 @@ html {
 
 }
 
-/* #main {
-
-
-} */
 
 #header-nav {
    padding-bottom:calc( var(--nav-height));
@@ -151,14 +146,18 @@ html {
 .nav-item {
    margin: 0 4px;
    font-size: 1.3rem;
-   /* height: 100%; */
    line-height: var(--nav-height);
 }
 
 .nav-item:hover .nav-item__link {
    cursor: pointer;
-   color: #FFCF7E;
+   color: #dfb66f;
 }
+
+.nav-item.active .nav-item__link{
+   color: #dfb66f;
+}
+
 .nav-item__link {
    text-decoration: none;
    color: #1869D8;
@@ -201,10 +200,6 @@ html {
 .register {
    margin-top: 4px;
 }
-/* .table {
-
-
-} */
 
 .title {
    color: #FF962F;
@@ -267,21 +262,6 @@ html {
    cursor: pointer;
 }
 
-/* .btn--pull-right {
-
-}
-
-.btn--pull-all-right {
-
-}
-
-.btn--pull-left {
-
-}
-
-.btn--pull-all-left {
-
-} */
 
 .btns-resgister {
    padding: 4px 0;
@@ -292,18 +272,6 @@ html {
    width: 70px;
 }
 
-
-/* List Student *
-   2x+2y=100
-   x+y=50
-   x=20,x=30
-
-*/
-
-
-/* .list-students {
-
-} */
 
 .heading {
    color: var(--white-color);
@@ -367,11 +335,6 @@ html {
    color: var(--row-color);
 
 }
-
-
-/* #slide {
-
-} */
 
 .news {
    margin:2px 0 8px 0;

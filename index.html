@@ -57,10 +57,10 @@
                      <!-- begin right -->
                      <div class="row row--right">
                         <div class="col col-full">
-                           <form action="#" class="form-infors">
+                           <form action="#" class="form-infors" id="form-register">
                               <div class="form-infor">
                                  <label class="conponent-1" for="idsv">Mã số:</label>
-                                 <input type="text" class="form-input" name="idsv" id="idsv">
+                                 <input type="text" class="form-input" name="idsv" id="idsv" required>
                               </div>
                               <div class="form-infor">
                                  <label class="conponent-1" for="name">Họ và tên:</label>
@@ -72,12 +72,12 @@
                               </div>
                               <div class="form-infor">
                                  <label class="conponent-1" for="number">Điện thoại:</label>
-                                 <input type="text" class="form-input" name="number" id="number">
+                                 <input type="text" class="form-input" name="number" id="number" required>
                               </div>
                               <div class="form-infor">
                                  <label class="conponent-1" for="gender">Giới tính:</label>
                                  <div class="form-infor--gender form-input">
-                                    <input type="radio" name="gender" id="male">
+                                    <input type="radio" name="gender" id="male" required>
                                     <label for="gender">Nam</label>
                                     <input type="radio" name="gender" id="female">
                                     <label for="gender">Nữ</label>
@@ -104,7 +104,7 @@
                            <div class="col col-45">
                               <div class="table">
                                  <div class="title">Các môn học</div>
-                                 <ul class="courses">
+                                 <ul class="courses connectedSortable" id="courses">
                                     <li class="course">Lập trình hướng đối tượng</li>
                                     <li class="course">Cấu trúc dữ liệu</li>
                                     <li class="course">Lập trình window</li>
@@ -133,7 +133,7 @@
                               <div class="table">
                                  <div class="title title--left">Các môn học đã chọn</div>
 
-                                 <ul class="courses courses--chosen">
+                                 <ul class="courses connectedSortable courses--chosen" id="courses--chosen">
                                     <li class="course">Nhập môn lập trình</li>
                                     <li class="course">Kỹ thuật lập trình</li>
                                     <li class="course">Lập trình ứng dụng Java</li>
@@ -147,8 +147,8 @@
 
                      <div class="btns-resgister">
                         <div class="row row--center">
-                           <button class="btn btn--l">Đăng ký</button>
-                           <button class="btn btn--l">Xóa hết</button>
+                           <button type="submit" id="register" class="btn btn--l">Đăng ký</button>
+                           <button id="remove-all" class="btn btn--l">Xóa hết</button>
                         </div>
                      </div>
 

@@ -7,6 +7,7 @@
    <link rel="stylesheet" href="./public/styles.css">
    <link rel="stylesheet" href="./assets/fonts/themify-icons/assets/themify-icons/themify-icons.css">
    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+   <!-- <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js" type="text/javascript"></script> -->
    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
    <!-- <script>
       $(function () {
@@ -72,12 +73,12 @@
                               </div>
                               <div class="form-infor">
                                  <label class="conponent-1" for="number">Điện thoại:</label>
-                                 <input type="text" class="form-input" name="number" id="number" required>
+                                 <input type="text" class="form-input" name="number" id="number">
                               </div>
                               <div class="form-infor">
                                  <label class="conponent-1" for="gender">Giới tính:</label>
                                  <div class="form-infor--gender form-input">
-                                    <input type="radio" name="gender" id="male" required>
+                                    <input type="radio" name="gender" id="male">
                                     <label for="gender">Nam</label>
                                     <input type="radio" name="gender" id="female">
                                     <label for="gender">Nữ</label>
@@ -92,65 +93,65 @@
                                  <input type="email" class="form-input" name="email" id="email">
                               </div>
 
+                              <div class="register">
+
+                                 <div class="row">
+                                    <div class="col col-45">
+                                       <div class="table">
+                                          <div class="title">Các môn học</div>
+                                          <ul class="courses connectedSortable" id="courses">
+                                             <li class="course">Lập trình hướng đối tượng</li>
+                                             <li class="course">Cấu trúc dữ liệu</li>
+                                             <li class="course">Lập trình window</li>
+                                             <li class="course">NM Công nghệ phần mềm</li>
+                                             <li class="course">Trí tuệ nhân tạo</li>
+                                             <li class="course">Phát triển ứng dụng web</li>
+                                             <li class="course">Cơ sở dữ liệu</li>
+
+                                          </ul>
+                                       </div>
+                                    </div>
+
+                                    <!-- button -->
+
+                                    <div class="col col-10">
+                                       <div class="btns">
+                                          <div class="btn btn--pull-right">&gt</div>
+                                          <div class="btn btn--pull-all-right">&gt&gt</div>
+                                          <div class="btn btn--pull-left">&lt</div>
+                                          <div class="btn btn--pull-all-left">&lt&lt</div>
+
+                                       </div>
+                                    </div>
+                                    <!-- end button -->
+                                    <div class="col col-45">
+                                       <div class="table">
+                                          <div class="title title--left">Các môn học đã chọn</div>
+
+                                          <ul class="courses connectedSortable courses--chosen" id="courses--chosen">
+                                             <li class="course">Nhập môn lập trình</li>
+                                             <li class="course">Kỹ thuật lập trình</li>
+                                             <li class="course">Lập trình ứng dụng Java</li>
+                                          </ul>
+
+                                       </div>
+                                    </div>
+
+                                 </div>
+                              </div>
+
+                              <div class="btns-resgister">
+                                 <div class="row row--center">
+                                    <button type="submit" id="register" class="btn btn--l">Đăng ký</button>
+                                    <div id="remove-all" class="btn btn--l">Xóa hết</div>
+                                 </div>
+                              </div>
+
                            </form>
                         </div>
                      </div>
                      <!-- end right -->
 
-
-                     <div class="register">
-
-                        <div class="row">
-                           <div class="col col-45">
-                              <div class="table">
-                                 <div class="title">Các môn học</div>
-                                 <ul class="courses connectedSortable" id="courses">
-                                    <li class="course">Lập trình hướng đối tượng</li>
-                                    <li class="course">Cấu trúc dữ liệu</li>
-                                    <li class="course">Lập trình window</li>
-                                    <li class="course">NM Công nghệ phần mềm</li>
-                                    <li class="course">Trí tuệ nhân tạo</li>
-                                    <li class="course">Phát triển ứng dụng web</li>
-                                    <li class="course">Cơ sở dữ liệu</li>
-
-                                 </ul>
-                              </div>
-                           </div>
-
-                           <!-- button -->
-
-                           <div class="col col-10">
-                              <div class="btns">
-                                 <button class="btn btn--pull-right">&gt</button>
-                                 <button class="btn btn--pull-all-right">&gt&gt</button>
-                                 <button class="btn btn--pull-left">&lt</button>
-                                 <button class="btn btn--pull-all-left">&lt&lt</button>
-
-                              </div>
-                           </div>
-                           <!-- end button -->
-                           <div class="col col-45">
-                              <div class="table">
-                                 <div class="title title--left">Các môn học đã chọn</div>
-
-                                 <ul class="courses connectedSortable courses--chosen" id="courses--chosen">
-                                    <li class="course">Nhập môn lập trình</li>
-                                    <li class="course">Kỹ thuật lập trình</li>
-                                    <li class="course">Lập trình ứng dụng Java</li>
-                                 </ul>
-
-                              </div>
-                           </div>
-
-                        </div>
-                     </div>
-
-                     <div class="btns-resgister">
-                        <div class="row row--center">
-                           <button type="submit" id="register" class="btn btn--l">Đăng ký</button>
-                           <button id="remove-all" class="btn btn--l">Xóa hết</button>
-                        </div>
-                     </div>
 
                      <div class="list-students">
                         <div class="row">
@@ -197,54 +198,54 @@
                         <div class="new-heading">
                            <i class="down"></i>
                            <i class="icon-heading ti-arrows-vertical"></i>
-                           <span class="new-title">NEWS 01</span>
+                           <span class="new-title">Thông báo Đăng ký học phần học kỳ 2 năm học 2022-2023 </span>
                         </div>
                         <div class=" content">
-                           content content content content content
-                           content content content content content
-                           content content content content
+                           Học phần đăng ký phải thỏa điều kiện học phần học trước hoặc tiên quyết (nếu có). Sau khi đã
+                           tham gia học Anh văn bổ túc, sinh viên sẽ được đăng ký học Anh văn 1.
+                           </br>Trường tạm thời không áp dụng điều kiện ngoại ngữ khi đăng ký các học phần chuyên ngành
+                           trong học HK2/22-23. Đây là lần cuối cùng Trường cho phép sinh viên được đăng học phần chuyên
+                           ngành mà không xét điều kiện ngoại ngữ.
+                           </br>Số tín chỉ đăng ký trong học kỳ không vượt quá 25 tín chỉ.
+                           </br>Học phần Cơ sở lập trình MTH00055 /22TTH chỉ dành các sinh viên ngành Toán học K2019 trở
+                           về trước đăng ký học trả nợ, sinh viên K2020, 2021 nếu cần học trả nợ thì chờ học kỳ sau.
                         </div>
                      </div>
                      <div class="news ">
                         <div class="new-heading">
                            <i class="down"></i>
                            <i class="icon-heading ti-arrows-vertical"></i>
-                           <span class="new-title">NEWS 02</span>
+                           <span class="new-title">Thông báo kết quả cập nhật căn cước công dân</span>
                         </div>
                         <div class="content">
-                           content content content content content
-                           content content content content content
-                           content content content content
+                           Nhằm chuẩn hóa thông tin người học, Nhà trường yêu cầu toàn thể người học bao gồm Sinh viên,
+                           Học viên, Nghiên cứu sinh thực hiện cung cấp thông tin Căn cước Công dân (CCCD)
                         </div>
                      </div>
                      <div class="news ">
                         <div class="new-heading">
                            <i class="down"></i>
                            <i class="icon-heading ti-arrows-vertical"></i>
-                           <span class="new-title">NEWS 03</span>
+                           <span class="new-title">Thông tin tuyển dụng: Công ty TNHH SANKEN SCUBE</span>
                         </div>
                         <div class="content">
-                           content content content content content
-                           content content content content content
-                           content content content content content
-                           content content content content content
-                           content content content content content
-                           content content content
+                           Vị trí: Kỹ sư
+                           Số lượng: 10 người
+                           Thời gian phỏng vấn: từ đầu tháng 2/2023
+                           Thời gian nhận việc: 3/4/2023
+                           Chi tiết tuyển dụng vui lòng xem trong file đính kèm
                         </div>
                      </div>
                      <div class="news ">
                         <div class="new-heading">
                            <i class="down"></i>
                            <i class="icon-heading ti-arrows-vertical"></i>
-                           <span class="new-title">NEWS 04</span>
+                           <span class="new-title">Thông tin chương trình KIT - Japan Online Spring School 2023</span>
                         </div>
                         <div class="content">
-                           content content content content content
-                           content content content content content
-                           content content content content content
-                           content content content content content
-                           content content content content content
-                           content content content
+                           - Đối tượng tham gia: sinh viên năm 2,3,4 ngành Công nghệ thông tin và Công nghệ sinh học
+
+                        </br>- Số lượng: 10 sinh viên, mỗi ngành 5 sinh viên.
                         </div>
                      </div>
 

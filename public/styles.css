@@ -394,7 +394,10 @@ html {
    border: 1px solid #ddd;
 }
 
-
+#slide {
+   overflow-y: scroll;
+   max-height: 660px;
+}
 /* Resposive */
 @media(max-width: 780px) {
    .nav-item .nav-item__link {
